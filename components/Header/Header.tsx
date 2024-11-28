@@ -7,6 +7,11 @@ import { Links } from "./components/Links";
 
 export const Header = () => {
 
+	/**
+	 ** Podría utilizar un resize observer junto a un estado para gestionar los 
+	 ** cambios del ancho en escritorio y así cerrar el menu si esta abierto, pero hace falta el tiempo.
+	 */
+
 	return (
 		<HeaderContextProvider>
 			<header className="fixed flex justify-center backdrop-blur-[7px] h-14 top-0 w-full left-0 z-50">
