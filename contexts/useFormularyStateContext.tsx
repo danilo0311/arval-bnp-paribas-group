@@ -5,8 +5,10 @@ export type formularyContextTypes = {
 	setCodeIsValid: Dispatch<SetStateAction<boolean>>;
 	isSubmitButtonEnabled: boolean;
 	setSubmitButtonEnabled: Dispatch<SetStateAction<boolean>>;
-	code: CodeTypes,
-	setCode: Dispatch<SetStateAction<CodeTypes>>,
+	code: CodeTypes;
+	setCode: Dispatch<SetStateAction<CodeTypes>>;
+	isCodeSubmitted: boolean;
+	setSubmitCode: Dispatch<SetStateAction<boolean>>;
 };
 
 export const formularyContext = createContext<formularyContextTypes | undefined>(
@@ -37,7 +39,9 @@ export const UseFormularyContext: React.FC<{ children: ReactNode; }> = ({
 		isCodeValid,
 		setCodeIsValid,
 		isSubmitButtonEnabled,
-		setSubmitButtonEnabled
+		setSubmitButtonEnabled,
+		isCodeSubmitted,
+		setSubmitCode
 	};
 
 	return (

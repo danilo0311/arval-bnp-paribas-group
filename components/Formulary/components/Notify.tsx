@@ -10,24 +10,26 @@ export const Notify = ({ data }: {
 	if(isValid) return null;
 
 	const message = () => {
+
 		if(!hasValidLength) {
-			return "El código debe tener entre 8 y 10 caracteres.";
+			return "Le code doit comporter entre 8 et 10 caractères.";
 		}
 
 		if(!hasUppercaseLetter) {
-			return "El código debe contener al menos una letra mayúscula.";
+			return "Le code doit contenir au moins une lettre majuscule.";
 		}
 
 		if(!hasNumber) {
-			return "El código debe contener al menos un número.";
+			return "Le code doit contenir au moins un chiffre.";
 		}
 
-		return "El código ingresado no es válido.";
+		return "Le code saisi n'est pas valide.";
+
 	};
 
 	return (
 		<p className="text-red-500 text-xs font-sans">
-			{message()} {/* Renderiza el mensaje dinámicamente */}
+			{message()}
 		</p>
 	);
 };
