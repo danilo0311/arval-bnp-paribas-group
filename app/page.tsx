@@ -17,13 +17,13 @@ export async function generateMetadata(): Promise<Metadata> {
 				canonical: `https://arval.bnp.paribas.daniloarancibia.es`
 			},
 			openGraph: {
-				title: 'Blog Arval BNP Paribas',
+				title: 'Arval BNP Paribas',
 				description: 'Découvrez les dernières actualités et informations d\'Arval BNP Paribas',
 				url: 'https://arval.bnp.paribas.daniloarancibia.es',
 				siteName: 'Arval BNP Paribas',
 				images: [
 					{
-						url: '/images/bnp-paribas-card.png',
+						url: 'https://arval.bnp.paribas.daniloarancibia.es/images/bnp-paribas-card.png',
 						width: 1200,
 						height: 630,
 						alt: 'Arval BNP Paribas',

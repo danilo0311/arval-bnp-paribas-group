@@ -23,7 +23,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="fr">
 			<body
 				className={`${ bnppBoldSans.className } relative flex justify-center w-full overflow-x-hidden`}
 			>
