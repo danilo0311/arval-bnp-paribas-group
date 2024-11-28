@@ -75,6 +75,7 @@ export const Form = () => {
 								hasValidLength: false
 
 							});
+							setSubmitButtonEnabled(false);
 						}}
 						disabled={!isSubmitButtonEnabled}
 						title="Découvrez"
