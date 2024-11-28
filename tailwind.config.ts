@@ -18,7 +18,8 @@ export default {
 				"primary-green": '#00915A',
 				"secondary-green": '#004B3A',
 				"primary-brown": '#757575',
-				"primary-gray": '#292929'
+				"primary-gray": '#292929',
+				"secondary-brown": '#2D2926'
 			},
 		},
 	},
