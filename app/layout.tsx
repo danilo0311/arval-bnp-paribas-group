@@ -26,11 +26,11 @@ export default function RootLayout({
 	return (
 		<html lang="fr">
 			<body
-				className={`${ bnppBoldSans.className } h-screen min-h-max relative flex flex-col justify-center items-center w-full overflow-x-hidden`}
+				className={`${ bnppBoldSans.className } min-h-max relative flex flex-col justify-center items-center w-full overflow-x-hidden`}
 			>
 				<Header />
 				<main
-					className="w-full max-md:px-3 md:px-6 max-xl:px-14 max-w-screen-xl max-lg:pt-14"
+					className="min-h-max w-full max-md:px-3 md:px-6 max-xl:px-14 max-w-screen-xl max-lg:pt-14"
 				>
 					{children}
 				</main>
