@@ -2,54 +2,54 @@ import { Formulary } from "@/components/Formulary/Formulary";
 import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
 
-export async function generateMetadata(parent: ResolvingMetadata
-): Promise<Metadata> {
+// export async function generateMetadata(parent: ResolvingMetadata
+// ): Promise<Metadata> {
 
-	try {
+// 	try {
 
-		const previousImages = (await parent).openGraph?.images || [];
+// 		const previousImages = (await parent).openGraph?.images || [];
 
-		return {
-			title: 'Arval BNP Paribas',
-			description: 'Découvrez les dernières actualités et informations d\'Arval BNP Paribas',
-			keywords: [ 'Arval', 'BNP Paribas', 'entreprise française' ],
-			authors: [ { name: 'Équipe Arval' } ],
-			creator: 'Arval BNP Paribas',
-			publisher: 'Arval BNP Paribas',
-			alternates: {
-				canonical: `https://arval.bnp.paribas.daniloarancibia.es`
-			},
-			openGraph: {
-				title: 'Blog Arval BNP Paribas',
-				description: 'Découvrez les dernières actualités et informations d\'Arval BNP Paribas',
-				url: 'https://arval.bnp.paribas.daniloarancibia.es',
-				siteName: 'Arval BNP Paribas',
-				images: [
-					{
-						url: '/images/bnp-paribas-card.png',
-						width: 1200,
-						height: 630,
-						alt: 'Arval BNP Paribas',
-					},
-					...previousImages
-				],
-				locale: 'fr_FR',
-				type: 'website'
-			},
-			twitter: {
-				card: 'summary_large_image',
-				title: 'Arval BNP Paribas',
-				description: 'Découvrez les dernières actualités et informations d\'Arval BNP Paribas',
-				images: [ '/images/bnp-paribas-card.png' ]
-			}
-		};
-	} catch(error) {
+// 		return {
+// 			title: 'Arval BNP Paribas',
+// 			description: 'Découvrez les dernières actualités et informations d\'Arval BNP Paribas',
+// 			keywords: [ 'Arval', 'BNP Paribas', 'entreprise française' ],
+// 			authors: [ { name: 'Équipe Arval' } ],
+// 			creator: 'Arval BNP Paribas',
+// 			publisher: 'Arval BNP Paribas',
+// 			alternates: {
+// 				canonical: `https://arval.bnp.paribas.daniloarancibia.es`
+// 			},
+// 			openGraph: {
+// 				title: 'Blog Arval BNP Paribas',
+// 				description: 'Découvrez les dernières actualités et informations d\'Arval BNP Paribas',
+// 				url: 'https://arval.bnp.paribas.daniloarancibia.es',
+// 				siteName: 'Arval BNP Paribas',
+// 				images: [
+// 					{
+// 						url: '/images/bnp-paribas-card.png',
+// 						width: 1200,
+// 						height: 630,
+// 						alt: 'Arval BNP Paribas',
+// 					},
+// 					...previousImages
+// 				],
+// 				locale: 'fr_FR',
+// 				type: 'website'
+// 			},
+// 			twitter: {
+// 				card: 'summary_large_image',
+// 				title: 'Arval BNP Paribas',
+// 				description: 'Découvrez les dernières actualités et informations d\'Arval BNP Paribas',
+// 				images: [ '/images/bnp-paribas-card.png' ]
+// 			}
+// 		};
+// 	} catch(error) {
 
-		console.warn(error);
-		return {};
+// 		console.warn(error);
+// 		return {};
 
-	}
-}
+// 	}
+// }
 
 export default function Home() {
 	return (
