@@ -2,9 +2,7 @@ import { Formulary } from "@/components/Formulary/Formulary";
 import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
 
-export async function generateMetadata({ params }: {
-	params: { lang: string; };
-}, parent: ResolvingMetadata
+export async function generateMetadata(parent: ResolvingMetadata
 ): Promise<Metadata> {
 
 	try {
