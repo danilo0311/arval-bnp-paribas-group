@@ -1,20 +1,33 @@
-export const verifyCode = ({ code }: { code: string; }): { isValid: boolean; } => {
+export const verifyCode = ({ code }: { code: string | undefined; }): {
+	value: string | undefined;
+	isValid: boolean,
+	hasUppercaseLetter: boolean,
+	hasNumber: boolean,
+	hasValidLength: boolean;
+} => {
 
 	const maxLength = 10;
 	const minLength = 8;
-	const codeLength = code.length;
 
-	if(codeLength <= maxLength && code.length >= minLength) {
+	if(!code) return {
+		value: undefined,
+		isValid: false,
+		hasUppercaseLetter: false,
+		hasNumber: false,
+		hasValidLength: false
 
-		const hasLetter = /[a-zA-Z]/.test(code);
-		const hasNumber = /\d/.test(code);
+	};
 
-		return { isValid: hasLetter && hasNumber };
+	const hasValidLength = code.length >= minLength && code.length <= maxLength;
+	const hasUppercaseLetter = /[A-Z]/.test(code);
+	const hasNumber = /\d/.test(code);
 
-	} else {
-
-		return { isValid: false };
-
-	}
+	return {
+		value: code,
+		isValid: hasValidLength && hasUppercaseLetter && hasNumber,
+		hasUppercaseLetter,
+		hasValidLength,
+		hasNumber
+	};
 
 };

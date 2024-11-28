@@ -3,24 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'bnpp-sans';
-	src: url('../fonts/bnpp-sans.ttf') format('ttf');
+	font-family: "bnpp-sans";
+	src: url("../fonts/bnpp-sans.ttf") format("ttf");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Open Sans';
-	src: url('/fonts/OpenSans/OpenSans-VariableFont_wdth,wght.ttf')
-		format('truetype');
+	font-family: "Open Sans";
+	src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
 	font-weight: 100 900;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Open Sans';
-	src: url('/fonts/OpenSans/OpenSans-Italic-VariableFont_wdth,wght.ttf')
-		format('truetype');
+	font-family: "Open Sans";
+	src: url("../fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
 	font-weight: 100 900;
 	font-style: italic;
 }
