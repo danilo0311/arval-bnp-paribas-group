@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/assets/styles/globals.css";
 import { Header } from "@/components/Header/Header";
+import { Footer } from "@/components/Footer/Footer";
 
 const bnppBoldSans = localFont({
 	src: '../assets/fonts/BNPPSans-Bold.woff',
@@ -25,14 +26,15 @@ export default function RootLayout({
 	return (
 		<html lang="fr">
 			<body
-				className={`${ bnppBoldSans.className } relative flex justify-center w-full overflow-x-hidden`}
+				className={`${ bnppBoldSans.className } h-screen min-h-max relative flex flex-col justify-center items-center w-full overflow-x-hidden`}
 			>
 				<Header />
 				<main
-					className="w-full max-md:px-3 md:px-6 max-xl:px-14 max-w-screen-xl pt-20 max-lg:pt-14"
+					className="w-full max-md:px-3 md:px-6 max-xl:px-14 max-w-screen-xl max-lg:pt-14"
 				>
 					{children}
 				</main>
+				<Footer />
 			</body>
 		</html>
 	);

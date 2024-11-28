@@ -49,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Home() {
 	return (
-		<section className="h-screen justify-center w-full flex flex-col items-center">
+		<section className="min-h-screen h-screen justify-center w-full flex flex-col items-center">
 			<div className="flex items-center max-lg:flex-col lg:flex-row-reverse py-6">
 				<Image
 					loading='lazy'
